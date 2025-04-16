@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build C++",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "src/main.cpp",
+                "src/class.cpp",
+                "-Iinclude",  // Include directory for header files
+                "-o",
+                "build/output.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
