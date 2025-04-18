@@ -7,7 +7,7 @@ int main()
     cout << "Enter the no of rows and cols\n";
     cin >> row >> col;
     cout << row << " -- " <<col << endl;
-
+    // int* arr[ROWS]; // STATIC DECLARATION OF ARRAY OF POINTERS
     int **arr;
     allocate_array(arr, row, col);
     
