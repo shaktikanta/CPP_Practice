@@ -1,6 +1,6 @@
 #! /bin/bash
 
-git add ./src/* ./include/*
+git add ./* ./src/* ./include/*
 echo "enetr a commit message:"
 read message
 echo $message
