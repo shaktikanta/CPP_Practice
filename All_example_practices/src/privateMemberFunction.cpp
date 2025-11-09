@@ -5,7 +5,7 @@ using namespace std;
 class emp{
     int id;
     char name[20];
-    long float sal;
+    float sal;
     void get(){
         cout << "Enter id , Name & Salary:";
         cin >> id;
