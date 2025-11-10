@@ -61,5 +61,11 @@ int main()
     for(int i = 0; i<no; i++){
         ptr[i]->put();
     }
+    //Clear the memory
+    for (int i = 0; i < no; ++i) {
+        delete ptr[i];
+    }
+    delete[] ptr;
+
     return 0;
 }
