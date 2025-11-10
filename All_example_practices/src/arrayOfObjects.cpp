@@ -38,14 +38,28 @@ int main()
     int no; 
     cout << "Enter no of students";
     cin >> no;
-    stu *ptr = new stu[no];
+    
+    //Dynamic allocation though single pointer
+    // stu *ptr = new stu[no];
+    // for(int i = 0; i<no; i++){
+    //     cout << "Enter " << i+1 << " no student details: ";
+    //     ptr[i].get();
+    // }
+    //  system("clear");
+    // for(int i = 0; i<no; i++){
+    //     ptr[i].put();
+    // }
+
+    //Dynamic allocation through double pointer
+    stu **ptr = new stu*[no];
     for(int i = 0; i<no; i++){
         cout << "Enter " << i+1 << " no student details: ";
-        ptr[i].get();
+        ptr[i] = new stu;
+        ptr[i]->get();
     }
-     system("clear");
+    system("clear");
     for(int i = 0; i<no; i++){
-        ptr[i].put();
+        ptr[i]->put();
     }
     return 0;
 }
