@@ -35,8 +35,9 @@ int main(int argc, const char** argv) {
     S1.show();
     S2.show();
 
+    //deep copy example
     S2.change(25,35);
-    
+
     S1.show();
     S2.show();
     
